@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!--
+        TextView : affiche le compteur
+        - text         : texte initial affiché
+        - textSize     : taille du texte (sp = unité pour les textes)
+        - textStyle    : gras
+        - id           : identifiant unique → on l'utilisera dans le Java
+    -->
+    <TextView
+        android:id="@+id/textViewCompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compteur : 0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"/>
+
+    <!--
+        Bouton 1 : afficher un Toast
+        - id : btnToast → sera appelé dans le Java
+    -->
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔔 Afficher Toast"
+        android:layout_marginBottom="16dp"/>
+
+    <!--
+        Bouton 2 : incrémenter le compteur
+        - id : btnCompteur → sera appelé dans le Java
+    -->
+    <Button
+        android:id="@+id/btnCompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="➕ Incrémenter"/>
+
+</LinearLayout>
